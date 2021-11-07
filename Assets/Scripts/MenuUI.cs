@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class MenuUI : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Text playerName;
+    public InputField playerName;
     void Start()
     {
         
