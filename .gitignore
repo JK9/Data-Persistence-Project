@@ -1,3 +1,7 @@
 Library/
 obj/
+.vscode/
+Logs/
+Temp/
+UserSettings/
 
