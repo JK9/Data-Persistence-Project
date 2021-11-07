@@ -38,11 +38,12 @@
   <ItemGroup>
      <Compile Include="Assets/Scripts/Paddle.cs" />
      <Compile Include="Assets/Scripts/MainManager.cs" />
+     <Compile Include="Assets/Scripts/GameManager.cs" />
      <Compile Include="Assets/Scripts/Ball.cs" />
      <Compile Include="Assets/Scripts/DeathZone.cs" />
      <Compile Include="Assets/Scripts/Brick.cs" />
      <Compile Include="Assets/Scripts/MenuUI.cs" />
-     <Compile Include="Assets/Scripts/GameManager.cs" />
+     <Compile Include="Assets/Scripts/SaveData.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/mnt/DE06DE9806DE714F/Ubuntu/Apps/2020.3.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

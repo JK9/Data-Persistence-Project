@@ -39,6 +39,8 @@ public class MainManager : MonoBehaviour
                 brick.onDestroyed.AddListener(AddPoint);
             }
         }
+
+        DisplayHighScore();
     }
 
     private void Update()
@@ -83,7 +85,17 @@ public class MainManager : MonoBehaviour
     {
         if (m_Points > m_highScore)  //new high score
         {
-            HighScoreText.text = "Best Score : " + GameManager.instance.playerName + " " + m_Points;
+            m_highScore = m_Points;
+            GameManager.instance.SetNewHighScore(m_Points);
+
+            DisplayHighScore();           
         }
+    }
+
+    private void DisplayHighScore()
+    {
+        HighScoreText.text = "Best Score : " + 
+                GameManager.instance.highScorePlayerName + " " + GameManager.instance.highScore;
+
     }
 }
